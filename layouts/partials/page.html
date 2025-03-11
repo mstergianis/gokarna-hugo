@@ -2,6 +2,12 @@
 
     <div class="post-header-section">
         <h1>{{ .Title | markdownify }}</h1>
+        {{ if .Params.github }}
+        {{ $url := urls.Parse .Params.github }}
+        <a href="{{ $url.String }}">
+          <span data-feather="github"></span>
+        </a>
+        {{ end }}
     </div>
 
     <div class="post-content">
@@ -12,4 +18,3 @@
         {{ partial "back-to-top.html" . }}
     {{ end }}
 </div>
-

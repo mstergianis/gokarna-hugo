@@ -465,16 +465,32 @@ table td {
   /* Prevent long strings from overflowing */
   overflow-wrap: break-word;
 }
+.post-header-section {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    justify-content: space-between;
+}
+.post-header-section > h1 {
+    width: auto;
+}
+.post-header-section > a {
+    justify-content: right;
+}
+.post-header-section > a, .post-header-section > a > svg {
+    width: 2rem;
+    height: 2rem;
+}
 .post .post-date, .prev-post-date, .next-post-date {
-  color: gray;
+    color: gray;
 }
 .post .post-content {
-  line-height: 1.7;
-  margin-top: 50px;
-  letter-spacing: 0.5px;
+    line-height: 1.7;
+    margin-top: 50px;
+    letter-spacing: 0.5px;
 }
 .post-content h1, .post-content h2, .post-content h3, .post-content h4 {
-  scroll-margin-top: 55px;
+    scroll-margin-top: 55px;
 }
 .post-content h1 {
   margin-top: 40px;
@@ -577,6 +593,7 @@ table td {
     height: 7rem;
     width: 7rem;
   }
+
 
   .nav-links .nav-link,
   .nav-icons-divider {
