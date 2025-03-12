@@ -715,3 +715,14 @@ table td {
         visibility: hidden;
     }
 }
+
+.recent-post > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-post-title, .recent-post-date {
+    margin-top: 0;
+    margin-bottom: 0;
+    align-content: center;
+}
