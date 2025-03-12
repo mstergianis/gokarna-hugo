@@ -726,3 +726,7 @@ table td {
     margin-bottom: 0;
     align-content: center;
 }
+
+.recent-post-description {
+    margin: 0;
+}
