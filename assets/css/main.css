@@ -470,19 +470,19 @@ table td {
     /* Prevent long strings from overflowing */
     overflow-wrap: break-word;
 }
-.post-header-section {
+.page-header-section {
     display: flex;
     align-items: center;
     height: 120px;
     justify-content: space-between;
 }
-.post-header-section > h1 {
+.page-header-section > h1 {
     width: auto;
 }
-.post-header-section > a {
+.page-header-section > a {
     justify-content: right;
 }
-.post-header-section > a, .post-header-section > a > svg {
+.page-header-section > a, .page-header-section > a > svg {
     width: 2rem;
     height: 2rem;
 }
