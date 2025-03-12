@@ -2,6 +2,10 @@
 
 Gokarna is an opinionated theme with a focus on minimalism and simplicity.
 
+This is a fork with some heavily opinionated modifications. You should check out
+the great work the original authors did on the [upstream
+project](https://github.com/gokarna-theme/gokarna-hugo).
+
 ### Authors:
 
 - [Yash Mehrotra](https://yashmehrotra.com)
