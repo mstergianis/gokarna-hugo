@@ -1,6 +1,7 @@
 <div class="post container">
 
-    <div class="page-header-section">
+    <div>
+      <div class="page-header-section">
         <h1>{{ .Title | markdownify }}</h1>
         {{ if .Params.github }}
         {{ $url := urls.Parse .Params.github }}
@@ -8,6 +9,8 @@
           <span data-feather="github"></span>
         </a>
         {{ end }}
+      </div>
+      <small role="doc-subtitle">{{ .Description | markdownify }}</small>
     </div>
 
     <div class="post-content">
