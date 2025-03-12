@@ -179,9 +179,9 @@ img {
     display: block;
     padding: 0 6px;
 }
-.logo {
-    height: 48px;
-    width: 48px;
+.logo > svg {
+    width: 64px;
+    height: 64px;
 }
 .nav-link a svg {
     height: 20px;
@@ -418,7 +418,7 @@ table td {
 
 .home-about h1 {
     font-size: 2em;
-    margin-bottom: 0.4em;
+    margin-top: 0.0em;
 }
 
 .home-about h2 {
