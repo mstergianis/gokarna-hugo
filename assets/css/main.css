@@ -15,6 +15,12 @@
 }
 
 @font-face {
+    font-family: 'TeXGyrePagella-Regular';
+    font-weight: 400;
+    src: url("/fonts/texgyrepagella-regular-pruned.otf");
+}
+
+@font-face {
     font-family: Lato;
     font-weight: 700;
     src: url("/fonts/Lato-Bold.ttf");
@@ -162,6 +168,7 @@ img {
     height: 100%;
     line-height: 50px;
     padding-left: 15px;
+    font-family: 'TeXGyrePagella-Regular';
 }
 .nav-title a {
     height: 50px;
@@ -417,6 +424,7 @@ table td {
 }
 
 .home-about h1 {
+    font-family: 'TeXGyrePagella-Regular';
     font-size: 2em;
     margin-top: 0.0em;
 }
