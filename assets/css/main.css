@@ -211,7 +211,7 @@ img {
     color: var(--light-secondary-color);
     margin: 0 10px;
 }
-.nav-links .dark-theme-toggle:hover {
+.nav-link a, .nav-links .dark-theme-toggle:hover {
     cursor: pointer;
 }
 
