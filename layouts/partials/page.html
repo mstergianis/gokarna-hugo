@@ -4,10 +4,11 @@
       <div class="page-header-section">
         <h1>{{ .Title | markdownify }}</h1>
         {{ if .Params.github }}
-        {{ $url := urls.Parse .Params.github }}
+        {{ with $url := urls.Parse .Params.github }}
         <a href="{{ $url.String }}">
           <span data-feather="github"></span>
         </a>
+        {{ end }}
         {{ end }}
       </div>
       <small role="doc-subtitle">{{ .Description | markdownify }}</small>

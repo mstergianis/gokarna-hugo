@@ -1,6 +1,16 @@
 <div class="post container">
     <div class="post-header-section">
+      <div class="page-header-section">
         <h1>{{ .Title | markdownify }}</h1>
+
+        {{ if .Params.github }}
+        {{ with $url := (urls.Parse .Params.github) }}
+        <a href="{{ $url.String }}">
+          <span data-feather="github"></span>
+        </a>
+        {{ end }}
+        {{ end }}
+      </div>
 
         {{/* Determine whether to display the date & description based on tags */}}
 
