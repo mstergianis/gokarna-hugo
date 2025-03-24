@@ -312,6 +312,55 @@ a:hover .feather-sun {
 }
 
 /* CODE BLOCKS */
+
+pre {
+    position: relative;
+}
+.copy-container {
+    align-items: center;
+    display: flex;
+    z-index: auto;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    width: 24px;
+    height: 24px;
+
+    background-color: inherit;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+}
+
+.copy-container:hover {
+    color: var(--accent-color);
+}
+
+.copy-code-button {
+    cursor: inherit;
+    color: inherit;
+
+    padding: 0;
+
+    width: 24px;
+    height: 24px;
+
+    border: none;
+    border-radius: 8px;
+    background-color: inherit;
+}
+
+.copy-code-button > svg {
+    stroke: currentColor;
+    width: auto;
+    height: 20px;
+}
+
+.copy-code-button > svg.feather-check {
+    stroke: #50C878;
+}
+
+
 code,
 pre {
     background-color: var(--light-tertiary-color);
