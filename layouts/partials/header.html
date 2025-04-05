@@ -10,7 +10,12 @@
         {{ end }}
 
         <div class="nav-title">
-            <a class="nav-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            <a class="nav-brand" href="{{ .Site.BaseURL }}">
+              {{ .Site.Title }}
+              {{ if not .IsHome }}
+                {{- partial "logo.html" . }}
+              {{ end }}
+            </a>
         </div>
 
         <div class="nav-links">

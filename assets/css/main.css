@@ -173,6 +173,19 @@ img {
 .nav-title a {
     height: 50px;
 }
+#logo {
+    view-transition-name: logo;
+}
+@view-transition {
+    navigation: auto;
+}
+.nav-title div#logo {
+    display: inline;
+}
+.nav-title a div#logo svg {
+    height: 32px;
+    vertical-align: middle;
+}
 .header-nav .nav-links {
     float: right;
     line-height: 50px;

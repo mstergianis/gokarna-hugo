@@ -6,9 +6,7 @@
         {{ end }}
 	</div>
 
-  <div class="logo">
-    <svg viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg"><use href="/logo.svg#layer1"></use></svg>
-  </div>
+  {{- partial "logo.html" . }}
   <h1>{{ .Site.Title }}</h1>
     {{ if isset .Site.Params "description" }}
         <h2>{{ .Site.Params.Description }}</h2>
