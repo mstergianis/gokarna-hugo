@@ -1,4 +1,5 @@
-<div class="post-title">
+<div class="post-title"
+     style="view-transition-name: post-{{  replace (.Title | lower) " " "-" }};">
      <a href="{{ .Permalink }}" class="post-link">{{ .Title | markdownify }}</a>
      {{/* Decide to display the date based on the tags */}}
      {{ $displayDate := true }}

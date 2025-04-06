@@ -1,7 +1,9 @@
 <div class="post container">
     <div class="post-header-section">
       <div class="page-header-section">
-        <h1>{{ .Title | markdownify }}</h1>
+        <h1 style="view-transition-name: post-{{  replace (.Title | lower) " " "-" }};">
+          {{ .Title | markdownify }}
+        </h1>
 
         {{ if .Params.github }}
         {{ with $url := (urls.Parse .Params.github) }}
