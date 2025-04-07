@@ -184,6 +184,8 @@ img {
 }
 .nav-title a div#logo svg {
     height: 32px;
+    width: 32px;
+    padding-left: 8px;
     vertical-align: middle;
 }
 .header-nav .nav-links {

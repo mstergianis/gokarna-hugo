@@ -28,8 +28,14 @@ a:hover .feather-moon {
   color: white;
 }
 
+a:hover .logo svg {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
 .gk-social-icons-list .gk-social-icon,
-.gk-social-icons-list .gk-social-icon a:visited  {
+.gk-social-icons-list .gk-social-icon a:visited,
+.logo > svg {
   fill: var(--dark-text-color);
 }
 
