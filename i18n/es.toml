@@ -16,3 +16,5 @@
   other = 'Etiquetas'
 [Posts]
   other = 'Entradas'
+[Projects]
+  other = 'Proyectos'

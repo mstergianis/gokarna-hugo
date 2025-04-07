@@ -12,3 +12,7 @@
   other = 'Вперед'
 [tags]
   other = 'Теги'
+[Posts]
+  other = 'Сообщения'
+[Projects]
+  other = 'Проекты'

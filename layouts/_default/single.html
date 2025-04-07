@@ -8,4 +8,9 @@
         {{- partial "page.html" . -}}
         {{- partial "toc.html" . -}}
     {{ end }}
+
+    {{ if eq .Type "project" }}
+        {{- partial "page.html" . -}}
+        {{- partial "toc.html" . -}}
+    {{ end }}
 {{ end }}

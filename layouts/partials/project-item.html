@@ -1,0 +1,26 @@
+<div class="post-title"
+     >
+  <a href="{{ .RelPermalink }}" class="post-link">
+    <h2 style="view-transition-name: project-{{  replace (.Title | lower) " " "-" }};">
+      {{ .Title | markdownify }}
+    </h2>
+  </a>
+     {{/* Decide to display the date based on the tags */}}
+     {{ $displayDate := true }}
+     {{ $tagsHidePostDate := or .Site.Params.Hidden.TagsPostDate slice }}
+     {{ $postTags := or .Params.Tags slice }}
+
+     {{ if gt ($tagsHidePostDate | intersect $postTags | len) 0 }}
+       {{ $displayDate = false }}
+     {{ end }}
+
+    {{ if eq $displayDate true }}
+    <div class="flex-break"></div>
+    <div class="post-date">{{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date}}</div>
+    {{ end }}
+    {{ if .Params.Thumbnail }}
+    <a href="{{ .RelPermalink }}">
+      <img src="{{ .Params.Thumbnail }}" />
+    </a>
+    {{ end }}
+</div>

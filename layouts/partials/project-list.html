@@ -1,0 +1,11 @@
+<div class="container list-posts">
+
+    <h1 class="list-title">{{ i18n .Name }}</h1>
+
+    {{ range (where .Pages "Params.type" "project") }}
+    {{ if not .Draft }}
+        {{- partial "project-item.html" . -}}
+    {{end}}
+    {{ end }}
+
+</div>
