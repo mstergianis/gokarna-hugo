@@ -8,6 +8,10 @@
     --light-text-color: black;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 @font-face {
     font-family: Lato;
     font-weight: 400;
@@ -173,18 +177,16 @@ img {
 .nav-title a {
     height: 50px;
 }
+
 #logo {
     view-transition-name: logo;
 }
-@view-transition {
-    navigation: auto;
-}
-.nav-title div#logo {
+.nav-title div:has(svg#logo) {
     display: inline;
 }
-.nav-title a div#logo svg {
-    height: 32px;
+.nav-title a div svg#logo {
     width: 32px;
+    height: 32px;
     padding-left: 8px;
     vertical-align: middle;
 }
@@ -603,17 +605,15 @@ table td {
 .list-posts a {
     text-decoration: none;
 }
-.post-title .post-link,
-.post-title .post-date {
-    display: inline-block;
+
+.post-title {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
 }
-.post-title .post-link {
-    /* This magic number is the largest width that keeps the post-date div from
-     *  causing the line to wrap with the longest possible date string
-     *  "September 22, 2022"
-     */
-    width: 73%;
-}
+
 .tags-list .post-tags {
     margin-top: 50px;
 }
@@ -706,10 +706,6 @@ table td {
 
     .list-posts {
         flex: 1;
-    }
-
-    .list-posts .post-date {
-        color: gray;
     }
 
     .footer {
